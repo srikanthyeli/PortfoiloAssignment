@@ -72,7 +72,13 @@ class ThemeSwitcher extends React.Component {
 }
 
 
--App.js (Managing theme state with a class component)
+```jsx
+}
+```
+
+**App.js (Managing theme state with a class component)**
+
+```jsx
 import React from 'react';
 import Header from './Header';
 import MainContent from './MainContent';
@@ -91,8 +97,7 @@ class App extends React.Component {
   toggleTheme = () => {
     this.setState({ theme: this.state.theme === 'light' ? 'dark' : 'light' });
   }
-
-  render() {
+render() {
     return (
       <div className={`App ${this.state.theme}`}>
         <Header />
